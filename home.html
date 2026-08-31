@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Systems Course Overview</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px;
+            background-color: #f4f6f8;
+            color: #333333;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 650px;
+            margin: 0 auto;
+            padding: 24px;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin: 0 0 10px 0;
+            padding-bottom: 7px;
+            border-bottom: 1px solid #2995d6;
+            color: #1f2d3a;
+            font-size: 20px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 8px;
+            color: #30465b;
+            font-size: 15px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .diagram {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #171717;
+            color: #eeeeee;
+            border-radius: 2px;
+            font-family: monospace;
+            font-size: 11px;
+            line-height: 1.4;
+        }
+
+        ul {
+            padding-left: 16px;
+        }
+
+        li {
+            margin-bottom: 3px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 12px;
+            width: 100%;
+            font-size: 11px;
+        }
+
+        th {
+            padding: 8px;
+            background-color: #3498db;
+            color: #ffffff;
+            text-align: left;
+            border: 1px solid #d5d5d5;
+        }
+
+        td {
+            padding: 8px;
+            border: 1px solid #d5d5d5;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f7f7f7;
+        }
+
+        .note {
+            margin-top: 16px;
+            padding: 10px 12px;
+            background-color: #eaf5fc;
+            border-left: 3px solid #2196f3;
+        }
+
+        .instructor {
+            margin-top: 16px;
+            padding: 12px;
+            background-color: #fafafa;
+            border: 1px solid #dce3e8;
+        }
+
+        .instructor h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Web Systems Course Overview</h1>
+
+        <p>
+            Welcome to <strong>CSCE 20303: Web Systems</strong>.
+            This course introduces the foundational technologies used to build
+            modern web applications, focusing on client-side markup, style,
+            and server-side execution.
+        </p>
+
+        <pre class="diagram">+----------------+                +----------------+
+|                |   1. HTTP Request (GET /)    |
+|   Web Browser  | ----------------------------> |
+|     (Client)   |                                |   Web Server
+|                |   2. HTTP Response (200 OK)   |  (Apache/Nginx)
+|                | <---------------------------- |
++----------------+                +----------------+</pre>
+
+        <section>
+            <h2>Course Learning Objectives</h2>
+
+            <p>By the end of this semester, you will be able to:</p>
+
+            <ul>
+                <li>Structure web documents using semantic HTML5.</li>
+                <li>Style and lay out web pages using CSS.</li>
+                <li>Build dynamic client-side applications with JavaScript.</li>
+                <li>Understand client-server architecture and HTTP request cycles.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Weekly Topic Schedule</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Topic Overview</th>
+                        <th>Required Reading</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Week 1</td>
+                        <td>Course Introduction &amp; HTTP Basics</td>
+                        <td>Reading: Ch. 1</td>
+                    </tr>
+
+                    <tr>
+                        <td>Week 2</td>
+                        <td>HTML5 Semantics &amp; Internal CSS</td>
+                        <td>Reading: Ch. 2-3</td>
+                    </tr>
+
+                    <tr>
+                        <td>Week 3</td>
+                        <td>CSS Box Model &amp; Flexbox Layouts</td>
+                        <td>Reading: Ch. 4</td>
+                    </tr>
+
+                    <tr>
+                        <td>Week 4</td>
+                        <td>Client-Side JavaScript Foundations</td>
+                        <td>Reading: Ch. 5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <aside class="note">
+            <strong>Important Note on Assignments:</strong>
+            Web development requires attention to detail. Always validate
+            your HTML markup and test your pages across multiple browsers
+            before submitting your work.
+        </aside>
+
+        <section class="instructor">
+            <h2>Course Instructor</h2>
+
+            <p><strong>Instructor:</strong> Prof. Joe Smith</p>
+
+            <p><strong>Office:</strong> Baldor Building, Room 204</p>
+
+            <p><strong>Contact:</strong> <em>jsmith@college.edu</em></p>
+        </section>
+
+    </main>
+
+</body>
+</html>
